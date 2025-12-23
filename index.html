@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karan Shop</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    /* ---------- HEADER ---------- */
+    header {
+      background: #111;
+      color: #fff;
+      padding: 15px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background: #0d6efd;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 18px;
+    }
+
+    /* ---------- PRODUCTS ---------- */
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .product {
+      background: white;
+      width: 30%;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .product h3 {
+      margin: 10px 0;
+    }
+
+    .product button {
+      background: #0d6efd;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .products {
+        flex-direction: column;
+      }
+
+      .product {
+        width: 100%;
+      }
+
+      .hero h1 {
+        font-size: 24px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+      <div class="logo">Karan Shop</div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Welcome to Karan Shop</h1>
+    <p>Best quality products at affordable price</p>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="container">
+    <div class="products">
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Product">
+        <h3>Product One</h3>
+        <p>₹999</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Product">
+        <h3>Product Two</h3>
+        <p>₹1499</p>
+        <button>Buy Now</button>
+      </div>
+
+      <div class="product">
+        <img src="https://via.placeholder.com/300" alt="Product">
+        <h3>Product Three</h3>
+        <p>₹1999</p>
+        <button>Buy Now</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Karan Shop | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
